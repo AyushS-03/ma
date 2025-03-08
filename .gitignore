@@ -4,11 +4,11 @@ backend/uploads/*
 backend/*.pyc
 backend/.env
 backend/venv/
+backend/uploads/
 
 # Frontend
 frontend/node_modules/
 frontend/.env
-frontend/build/
 frontend/coverage/
 frontend/.DS_Store
 frontend/npm-debug.log*
