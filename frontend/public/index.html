@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#4285f4" />
+    <meta
+      name="description"
+      content="MedAssist AI - Your personal health assistant powered by artificial intelligence. Get instant medical guidance and document analysis."
+    />
+    <meta name="keywords" content="healthcare, AI, medical assistant, health, medical report analysis" />
+    <meta property="og:title" content="MedAssist AI - Your Personal Health Assistant" />
+    <meta property="og:description" content="Get instant medical guidance and document analysis powered by artificial intelligence" />
+    <meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- Preload images for faster loading -->
+    <link rel="preload" href="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9jdG9yJTIwb24lMjBwaG9uZXxlbnwwfHwwfHx8MA%3D%3D" as="image" />
+    <link rel="preload" href="https://img.freepik.com/premium-photo/medical-technology-ai-innovation-healthcare-digital-surgeon-doctor-analysis-diagnose-checking-brain-testing-result-with-robotic-network-modern-interface_1028938-123619.jpg?w=900" as="image" />
+    <!-- Added Google Fonts for better typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>MedAssist AI - Your Personal Health Assistant</title>
+    <style>
+      /* Apply the font to the whole application and add smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      /* Loading state styling */
+      .initial-loader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: #f5f7fa;
+      }
+      .loader-content {
+        text-align: center;
+      }
+      .loader-icon {
+        font-size: 48px;
+        margin-bottom: 16px;
+      }
+      .loader-text {
+        font-weight: 500;
+        color: #4285f4;
+      }
+      .loader-spinner {
+        border: 4px solid rgba(66, 133, 244, 0.3);
+        border-top: 4px solid #4285f4;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <!-- Initial loading state -->
+      <div class="initial-loader">
+        <div class="loader-content">
+          <div class="loader-icon">🧠</div>
+          <div class="loader-spinner"></div>
+          <div class="loader-text">Loading MedAssist AI...</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

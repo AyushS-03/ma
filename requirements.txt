@@ -1,0 +1,6 @@
+flask==2.2.3
+flask_cors==3.0.10
+werkzeug==2.2.3
+groclake==0.1.14
+python-docx==0.8.11
+PyPDF2==3.0.1
