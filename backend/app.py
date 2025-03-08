@@ -12,7 +12,8 @@ import sys
 from groq import Groq
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+# Update CORS configuration to allow requests from your Netlify domain
+CORS(app, origins=["https://dws-medicare.netlify.app", "http://localhost:3000"])
 
 # Set Groq API key - in production, this should be set as an environment variable
 GROQ_API_KEY = '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'

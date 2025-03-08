@@ -241,8 +241,9 @@ const sendMessage = async (messageText) => {
   }, 100);
 
   try {
-    console.log(`Sending message to API with token: ${token}`);
-    const response = await axios.post('http://localhost:5000/api/chat', 
+    const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+    console.log(`Sending message to API at: ${apiUrl}`);
+    const response = await axios.post(`${apiUrl}/api/chat`, 
       { message: messageText },
       { 
         headers: { 
