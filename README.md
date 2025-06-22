@@ -1,4 +1,4 @@
-# MedAssist AI - Medical Health Assistant
+# AccuMediq: AI-Powered Medical Assistant
 
 A React and Flask-based application that provides AI-powered medical assistance through general health queries and medical report analysis.
 
@@ -84,7 +84,7 @@ Use these credentials for testing:
 
 - **Frontend**: React, React Router, Axios
 - **Backend**: Flask, Flask-CORS
-- **AI Services**: Groclake ModelLake and VectorLake
+- **AI Services**: Deepseek R1
 
 ## Notes
 
